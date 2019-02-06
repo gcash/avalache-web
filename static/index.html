@@ -1,7 +1,7 @@
 <html>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script>
-    var ws = new WebSocket("ws://localhost:3000/ws");
+    var ws = new WebSocket("ws://avalanche.bchd.cash/ws");
     ws.onmessage = function (event) {
         console.log(event.data);
         var data = JSON.parse(event.data);
@@ -19,7 +19,7 @@
     $(document).ready(function(){
         $('#transactionList').innerHTML = "";
 
-        $.get("http://localhost:3000/notifications", function(data, status){
+        $.get("http://avalanche.bchd.cash/notifications", function(data, status){
             if (status == "success") {
                 var txs = JSON.parse(data);
                 txs.forEach(function (obj) {
