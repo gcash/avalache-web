@@ -1,9 +1,12 @@
 <html>
+<link rel="icon" type="image/png" sizes="192x192" href="https://bitcoincash.org/img/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://bitcoincash.org/img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://bitcoincash.org/img/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://bitcoincash.org/img/favicon/favicon-16x16.png">
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script>
     var ws = new WebSocket("wss://avalanche.bchd.cash/ws");
     ws.onmessage = function (event) {
-        console.log(event.data);
         var data = JSON.parse(event.data);
         appendToTransactionList(data);
     };
