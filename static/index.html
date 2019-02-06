@@ -78,5 +78,26 @@
           <div id="transactionList"></div>
       </div>
   </div>
+  <div style="height:60vh;width:120vh;background-color:white;margin:30 auto;opacity: 0.9;overflow:auto;min-width: min-content">
+      <div style="width:100%;">
+          <div style="padding:75px;padding-top: 35px;padding-bottom: 35px;font-size:2vw;text-align: center">About</div>
+          <div style="padding-left:75px;padding-right:75px;padding-bottom:35px;font-size:1.3vw;">
+              <p>
+                  Avalanche is a new consensus algorithm that was introduced in 2018. There is an active proposal to use it in Bitcoin Cash
+                  to enable nodes and miners to come to a pre-consensus on the set of valid transactions before they are included in a block.
+                  If used this way, it would give Bitcoin Cash the equivalent of nearly instantaneous confirmations while improving mempool
+                  synchronization and reducing the financial incentive to 51% attack.
+              </p>
+              <p>
+                  This website is a proof-of-concept of avalanche pre-consensus. There are avalanche-capable nodes on the Bitcoin Cash
+                  mainnet running the avalanche protocol. Whenever a transaction is finalized, that is when it reaches the point at which it
+                  can no longer be reversed by a double spend, it is added to the list above. As you can see, at present most transactions
+                  become irreversible after a second or less. To take this from proof-of-concept to an actual consensus rule will require lots of testing,
+                  experimentation, data collection, code review, and softfork activation rules. If you are interested in contributing please get
+                  in touch.
+              </p>
+          </div>
+      </div>
+  </div>
 </body>
 </html>
