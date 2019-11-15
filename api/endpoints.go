@@ -1,4 +1,4 @@
-package sherpa
+package api
 
 import (
 	"bytes"
@@ -42,9 +42,9 @@ func newWebsocketHandler(newConn socketChan, doneConn socketChan) http.HandlerFu
 	}
 }
 
-func newNotificationsHandler(notifications *boundedSlice) http.HandlerFunc {
+func newNotificationsHandler(notifCache *notificationCache) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
-		notifs := notifications.values()
+		notifs := notifCache.values()
 		out, err := json.MarshalIndent(&notifs, "", "    ")
 		if err != nil {
 			w.WriteHeader(http.StatusInternalServerError)

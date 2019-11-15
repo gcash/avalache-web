@@ -10,7 +10,7 @@
 // static/index.html
 // DO NOT EDIT!
 
-package sherpa
+package api
 
 import (
 	"bytes"

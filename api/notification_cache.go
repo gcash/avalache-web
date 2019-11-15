@@ -1,19 +1,19 @@
-package sherpa
+package api
 
-type boundedSlice struct {
+type notificationCache struct {
 	limit int
 	count int
 	items map[int]notif
 }
 
-func newBoundedSlice(limit int) *boundedSlice {
-	return &boundedSlice{
+func newNotificationCache(limit int) *notificationCache {
+	return &notificationCache{
 		limit: 8,
 		items: make(map[int]notif, limit),
 	}
 }
 
-func (m *boundedSlice) append(n notif) {
+func (m *notificationCache) append(n notif) {
 	var toDelete []int
 	if len(m.items) >= m.limit {
 		for i := range m.items {
@@ -29,7 +29,7 @@ func (m *boundedSlice) append(n notif) {
 	m.count++
 }
 
-func (m *boundedSlice) values() []notif {
+func (m *notificationCache) values() []notif {
 	values := make([]notif, len(m.items))
 	for _, n := range m.items {
 		values = append(values, n)
