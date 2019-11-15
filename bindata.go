@@ -10,7 +10,7 @@
 // static/index.html
 // DO NOT EDIT!
 
-package main
+package sherpa
 
 import (
 	"bytes"
@@ -90,7 +90,7 @@ func androidIcon192x192Png() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "android-icon-192x192.png", size: 7481, mode: os.FileMode(436), modTime: time.Unix(1549499333, 0)}
+	info := bindataFileInfo{name: "android-icon-192x192.png", size: 7481, mode: os.FileMode(420), modTime: time.Unix(1573795276, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -110,7 +110,7 @@ func avalanchePng() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "avalanche.png", size: 8662, mode: os.FileMode(436), modTime: time.Unix(1549428306, 0)}
+	info := bindataFileInfo{name: "avalanche.png", size: 8662, mode: os.FileMode(420), modTime: time.Unix(1573795276, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -130,7 +130,7 @@ func backgroundJpg() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "background.jpg", size: 529537, mode: os.FileMode(436), modTime: time.Unix(1549426618, 0)}
+	info := bindataFileInfo{name: "background.jpg", size: 529537, mode: os.FileMode(420), modTime: time.Unix(1573795276, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -150,7 +150,7 @@ func bchPng() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "bch.png", size: 11564, mode: os.FileMode(436), modTime: time.Unix(1549427587, 0)}
+	info := bindataFileInfo{name: "bch.png", size: 11564, mode: os.FileMode(420), modTime: time.Unix(1573795276, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -170,7 +170,7 @@ func favicon16x16Png() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "favicon-16x16.png", size: 471, mode: os.FileMode(436), modTime: time.Unix(1549499413, 0)}
+	info := bindataFileInfo{name: "favicon-16x16.png", size: 471, mode: os.FileMode(420), modTime: time.Unix(1573795276, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -190,7 +190,7 @@ func favicon32x32Png() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "favicon-32x32.png", size: 1148, mode: os.FileMode(436), modTime: time.Unix(1549499378, 0)}
+	info := bindataFileInfo{name: "favicon-32x32.png", size: 1148, mode: os.FileMode(420), modTime: time.Unix(1573795276, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -210,7 +210,7 @@ func favicon96x96Png() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "favicon-96x96.png", size: 3307, mode: os.FileMode(436), modTime: time.Unix(1549499397, 0)}
+	info := bindataFileInfo{name: "favicon-96x96.png", size: 3307, mode: os.FileMode(420), modTime: time.Unix(1573795276, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -230,7 +230,7 @@ func indexHtml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "index.html", size: 4658, mode: os.FileMode(436), modTime: time.Unix(1549598834, 0)}
+	info := bindataFileInfo{name: "index.html", size: 4658, mode: os.FileMode(420), modTime: time.Unix(1573795276, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
